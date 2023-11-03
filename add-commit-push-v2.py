@@ -18,8 +18,14 @@ print("Add Commit Push")
 print("\ngit status")
 os.system("git status")
 
+force = False
+for x in range(len(sys.argv)):  
+   if sys.argv[x] == 'f':
+      force = True
+
+
 #w3c schools code lines4-6.
-if numOfArgs != 2:
+if force == False:
     print("Do you want to continue with add commit push? (y):")
     confirm = input()
     if confirm != "y":
