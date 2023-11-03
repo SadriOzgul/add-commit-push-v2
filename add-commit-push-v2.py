@@ -20,7 +20,7 @@ os.system("git status")
 
 force = False
 for x in range(len(sys.argv)):  
-   if sys.argv[x] == 'f':
+   if sys.argv[x] == '-f':
       force = True
 
 
