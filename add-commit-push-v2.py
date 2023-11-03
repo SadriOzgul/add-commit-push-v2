@@ -27,7 +27,12 @@ if confirm != "y":
 
 print("\ngit add -A")
 os.system("git add -A")
-print('\ngit commit -m "Update files"')
-os.system('git commit -m "Update files"')
+
+commitStatement = '\ngit commit -m "' + message + '"'
+print(commitStatement)
+os.system(commitStatement)
+#print('\ngit commit -m "Update files"')
+#os.system('git commit -m "Update files"')
+
 print("\ngit push")
 os.system("git push")
